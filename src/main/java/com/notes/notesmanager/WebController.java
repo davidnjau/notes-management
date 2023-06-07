@@ -6,10 +6,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class WebController {
 
-    @RequestMapping(value = "/home")
-    public String dashboard() {
+    @RequestMapping(value = "/")
+    public String home() {
 
         return "notes-index";
+    }
+    @RequestMapping(value = "/sidebar")
+    public String sidebar() {
+
+        return "sidebar";
     }
 
 }

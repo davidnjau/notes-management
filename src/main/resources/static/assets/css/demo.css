@@ -2,6 +2,9 @@
 * demo.css
 * File include item demo only specific css only
 ******************************************************************************/
+pre, textarea {
+  overflow: auto;
+}
 
 .menu .app-brand.demo {
   height: 64px;
