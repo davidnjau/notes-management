@@ -8,13 +8,15 @@ public class WebController {
 
     @RequestMapping(value = "/")
     public String home() {
-
         return "notes-index";
     }
     @RequestMapping(value = "/sidebar")
     public String sidebar() {
-
         return "sidebar";
+    }
+    @RequestMapping(value = "/notes-view/{id}")
+    public String notesView() {
+        return "notes-view-details";
     }
 
 }
